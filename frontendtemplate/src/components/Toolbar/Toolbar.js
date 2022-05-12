@@ -7,8 +7,8 @@ const toolbar = props => (
             <div>THE LOGO</div>
             <div>
                 <ul>
-                    <li>products</li>
-                    <li>users</li>
+                    <li><a>Products</a></li>
+                    <li><a>Users</a></li>
                 </ul>
             </div>
         </nav>

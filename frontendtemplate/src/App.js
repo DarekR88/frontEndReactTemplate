@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div style = {{ height: '100%'}} >
       <Toolbar drawerClickHandler={toggleDrawer} />
-      <SideDrawer show={isSideDrawerOpen}/>
+      <SideDrawer show={isSideDrawerOpen} drawerClickHandler={toggleDrawer}/>
       {backdrop}
       <main style={{marginTop: '64px'}}>
         <p>This is the page content!</p>

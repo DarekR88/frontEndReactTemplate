@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop';
+import LandingScreen from './components/LandingScreen/LandingScreen'
+import SecondScreen from './components/SecondScreen/SecondScreen';
+import ThirdScreen from './components/ThirdScreen/ThirdScreen';
 
 const App = () => {
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
@@ -25,10 +28,12 @@ const App = () => {
     <div style = {{ height: '100%'}} >
       <Toolbar drawerClickHandler={toggleDrawer} />
       <SideDrawer show={isSideDrawerOpen} drawerClickHandler={toggleDrawer}/>
-      {backdrop}
-      <main style={{marginTop: '64px'}}>
-        <p>This is the page content!</p>
-      </main> 
+      {backdrop} 
+      <LandingScreen />
+      <SecondScreen />
+      <ThirdScreen />
+
+      
     </div >
   );
 }

@@ -5,7 +5,7 @@ import './ThirdScreen.css'
 const ThirdScreen = props => {
     return (
         <div className="thirdScreen">
-            <p>Third Screen</p>
+            <p className="content">Third Screen</p>
         </div>
     );
 };

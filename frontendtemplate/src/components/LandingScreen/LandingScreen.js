@@ -5,7 +5,7 @@ import './LandingScreen.css'
 const landingScreen = props => {
     return (
         <div className="landingScreen">
-            <p>Landing Screen</p>
+            <p className="content">Landing Screen</p>
         </div>
     );
 };

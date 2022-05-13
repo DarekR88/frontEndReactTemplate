@@ -1,4 +1,8 @@
 .secondScreen {
-    height: 1000px;
+    height: 100vh;
     background-color: lightcoral;
+}
+
+.content {
+    margin: 0;
 }
